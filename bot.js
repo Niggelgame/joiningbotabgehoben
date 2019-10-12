@@ -28,7 +28,7 @@ client.on('guildMemberAdd', member =>{
     let myRole = member.guild.roles.find(role => role.name === "Hobener");
 
     if(myRole == null) {
-        console.log(`The role "Spieler" is not available`);
+        console.log(`The role "Hobener" is not available`);
         return;
     }
     member.addRole(myRole).catch(console.error);
